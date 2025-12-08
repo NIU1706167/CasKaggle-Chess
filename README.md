@@ -39,7 +39,7 @@ El model final seleccionat ha estat el Gradient Boosting, de la mateixa manera q
 
 A l'hora de predir el guanyador d'una partida que encara no ha començat, aconseguim un accuracy del 0.666, de manera que s'està predint correctament 2 de cada 3 partides, la qual cosa considerem com un bon resultat.
 
-Pel model que utilitza informació dels moviments, hem fet servir els primers 35 moviments de cada partida. Aquesta elecció ens assegurava que la gran majoria de partides no estiguessin a punt d'acabar, però alhora ens donava prou informació perquè el model pogués millorar. Dit això, el model obté un accuracy del 0.736, el que ens diu que, com ja ens podíem imaginar, afegint informació dels moviments és més fàcil predir qui guanyarà
+Pel model que utilitza informació dels moviments, hem fet servir els primers 35 moviments de cada partida. Aquesta elecció ens assegurava que la gran majoria de partides no estiguessin a punt d'acabar, però alhora ens donava prou informació perquè el model pogués millorar. Dit això, el model obté un accuracy del 0.736, el que ens diu que, com ja ens podíem imaginar, afegint informació dels moviments progressivament és més fàcil predir qui guanyarà.
 
 ---
 
