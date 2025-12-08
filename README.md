@@ -26,6 +26,13 @@ Dins dels 4 notebooks en format Jupyter i dels dos scrpits en Python tenim el se
 - 3_model_previ.ipynb : notebook on tenim els models que entrenem per partides que no han començat, és a dir, models que entrenem sense cap de les variables relacionades amb els moviments. L'objectiu és veure fins a quin punt un model pot predir el guanyador sense informació de la partida actual i, a més, analitzar si ja es pot descartar algun dels models. Per fer això fem una cerca d'hiperparàmetres i una validació creuada en cada model per aconseguir el seu millor rendiment.
 - funcions.py : script de pyhton en el qual tenim totes les funcions que es necessiten per obtenir les variables relacionades amb els moviments que hem creat al fitxer "2_preprocessing.ipynb".
 - 3_model_partida.ipynb : últim notebook en el qual entrenems models ara afegints les variables dels moviments i acabem seleccionant un model final, després de fer cerca d'hiperparàmetres i validació creuada.
+---
+## Resultats
+El model final seleccionat ha estat el Gradient Boosting, de la mateixa manera que podríem haver seleccionat el Random Forest, ja que els resultats eren pràcticament els mateixos.
+
+A l'hora de predir el guanyador d'una partida que encara no ha començat, aconseguim un accuracy del 0.666, de manera que s'està predint correctament 2 de cada 3 partidas, la qual cosa considerem com un bon resultat.
+
+Pel model que utilitza informació dels moviments, hem fet servir els primers 35 moviments de cada partida. Aquesta elecció ens assegurava que la gran majoria de partides no estiguessin a punt d'acabar, però alhora ens donava prou informació perquè el model pogués millorar. Dit això, el model obté un accuracy del 0.736, el que ens diu que, com ja ens podíem imaginar, afegint informació dels moviments és més fàcil predir qui guanyarà
 
 ---
 
